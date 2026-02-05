@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine Interactive Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Faberica&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BACKGROUND OVERLAY -->
+<div class="background-overlay"></div>
+
+<!-- MAIN CARD -->
+<div class="main-card">
+  <h1>Will you be my Valentine?</h1>
+  <div class="buttons">
+    <button id="yesBtn">YES</button>
+    <button id="noBtn">NO</button>
+  </div>
+</div>
+
+<!-- YES POPUP -->
+<div class="popup-overlay" id="popup">
+  <div class="popup">
+    <div class="popup-heart-bg"></div>
+    <div class="popup-message">
+      TY FOR BEING MY VALENTINE<br><br>
+      No matter how much we argue or fight, I still like you.
+      Don’t worry about being too much or too clingy —
+      I love that about you.<br><br>
+      (this took so long to code so i hope you appreciate it)
+    </div>
+
+    <div class="spotify-section">
+      <p>
+        Here’s a shared playlist I made for us.
+        Hope you enjoy every song I added.
+      </p>
+      <a href="https://open.spotify.com/playlist/2xRXxZaiivdesT1mODjH0q?si=59bc50778d164536&pt=30d6c126a7784f9aa9834d3c418479b1"
+         target="_blank" class="spotify-btn">
+        Open Playlist
+      </a>
+    </div>
+
+    <button class="back-btn" id="backBtn">Back</button>
+  </div>
+</div>
+
+<!-- NO POPUP WITH EMOJI -->
+<div class="popup-overlay" id="noPopup">
+  <div class="popup">
+    <div class="popup-message" id="noPopupMessage">
+      <img src="https://tiktokemojiz.com/wp-content/uploads/2025/07/Hehe-TikTok-Emoji.webp" width="80" style="background:none;"><br><br>
+      Are you sure?
+    </div>
+    <button class="back-btn" id="noPopupBackBtn">Back</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

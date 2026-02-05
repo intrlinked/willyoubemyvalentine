@@ -1,0 +1,126 @@
+/* BODY BACKGROUND */
+body {
+  margin: 0;
+  height: 100vh;
+  background: url("https://giffiles.alphacoders.com/223/223610.gif") center/cover no-repeat fixed;
+  font-family: 'Faberica', cursive;
+  overflow: hidden;
+}
+
+/* DARK OVERLAY */
+.background-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+/* MAIN CARD */
+.main-card {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffd6e8;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.buttons button {
+  font-size: 24px;
+  padding: 12px 28px;
+  margin: 10px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#yesBtn { background: #ff5fa2; color: white; }
+#noBtn { background: #222; color: white; }
+
+/* POPUP OVERLAY */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+}
+
+/* POPUP CARD */
+.popup {
+  position: relative;
+  background: #ffe1ee;
+  padding: 40px;
+  width: 440px;
+  border-radius: 24px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(255, 100, 160, 0.6);
+}
+
+/* POPUP MESSAGE */
+.popup-message {
+  position: relative;
+  z-index: 2;
+  color: #8a004a;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* FALLING PIXEL HEARTS */
+.popup-heart-bg::before {
+  content: "♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥";
+  position: absolute;
+  width: 100%;
+  top: -120%;
+  left: 0;
+  font-family: monospace;
+  font-size: 14px;
+  color: rgba(255, 80, 140, 0.4);
+  letter-spacing: 20px;
+  animation: heartsFall 6s linear infinite;
+}
+
+@keyframes heartsFall {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(220%); }
+}
+
+/* SPOTIFY */
+.spotify-section {
+  margin-top: 22px;
+  color: #8a004a;
+  font-size: 15px;
+}
+
+.spotify-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 24px;
+  background: #ff5fa2;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  margin-top: 24px;
+  padding: 10px 24px;
+  border-radius: 20px;
+  border: 2px solid #ff5fa2;
+  background: transparent;
+  color: #ff5fa2;
+  cursor: pointer;
+}
